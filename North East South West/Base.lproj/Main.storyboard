@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,128 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-dJ-Uol">
+                                <rect key="frame" x="10" y="268.5" width="57" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="West">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.33667008609999999" green="0.54582075929999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xBQ-WN-Kyo" kind="presentation" identifier="westSegue" id="9UD-u8-wyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOl-dl-DU2">
+                                <rect key="frame" x="129" y="527" width="62" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="South">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.33667008609999999" green="0.54582075929999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xBQ-WN-Kyo" kind="presentation" identifier="southSegue" id="KHQ-sW-83H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uv-pP-rYU">
+                                <rect key="frame" x="258" y="268.5" width="52" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="East">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.33667008609999999" green="0.54582075929999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xBQ-WN-Kyo" kind="presentation" identifier="eastSegue" id="PsJ-oA-tce"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyU-xl-6Y5">
+                                <rect key="frame" x="129.5" y="10" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="North">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.33667008609999999" green="0.54582075929999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xBQ-WN-Kyo" kind="presentation" identifier="northSegue" id="mO2-NA-NxY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.36292897197239188" green="0.9518556701030928" blue="0.89348456305955815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pm5-dJ-Uol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3K2-5h-pTf"/>
+                            <constraint firstItem="Pm5-dJ-Uol" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Bar-gw-KSg"/>
+                            <constraint firstItem="GyU-xl-6Y5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I8H-UQ-09B"/>
+                            <constraint firstItem="KOl-dl-DU2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NPo-iw-8V0"/>
+                            <constraint firstItem="6uv-pP-rYU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="UJP-iY-1tQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6uv-pP-rYU" secondAttribute="trailing" constant="10" id="d7b-ZT-rUM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KOl-dl-DU2" secondAttribute="bottom" constant="10" id="jql-WE-iFt"/>
+                            <constraint firstItem="GyU-xl-6Y5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="npZ-2H-UO0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="3jz-i3-BiR">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="xBQ-WN-Kyo" customClass="SecondViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UO5-8r-R4o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcz-4X-oqz">
+                                <rect key="frame" x="126.5" y="268.5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="directionButton:" destination="xBQ-WN-Kyo" eventType="touchUpInside" id="Ht3-LX-VcT"/>
+                                    <segue destination="fcq-Bb-hqu" kind="unwind" unwindAction="ununwindToMainWithSender:" id="CXa-8p-HtD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LBb-rU-RF1"/>
+                        <color key="backgroundColor" red="0.36292897200000002" green="0.95185567010000005" blue="0.89348456310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mcz-4X-oqz" firstAttribute="centerY" secondItem="LBb-rU-RF1" secondAttribute="centerY" id="4ok-T6-hVK"/>
+                            <constraint firstItem="Mcz-4X-oqz" firstAttribute="centerX" secondItem="LBb-rU-RF1" secondAttribute="centerX" id="Bbb-ra-h6m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonTitle" destination="Mcz-4X-oqz" id="p1Z-lC-0z2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpN-U8-seb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fcq-Bb-hqu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="76"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KHQ-sW-83H"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
